@@ -1,0 +1,21 @@
+export(postgwas, snp2gene.prox, snp2gene.LD, gene2p, GATES, SpD, gwasGOenrich, regionalplot, manhattanplot, gwas2network, getInteractions.path, getInteractions.proteincomplex, getInteractions.domains, getInteractions.GO, removeNeighborSnps, getGenotypes, LDparallel, biomartConfigs, ytracks.regionalplot, gwas2network.plot, getSnpsByWin, getSnpsByRS, bm.id2name, bm.name2id, bm.remapSnps, getPostgwasBuffer, setPostgwasBuffer, clearPostgwasBuffer)
+import(biomaRt)
+import(data.table)
+import(org.Hs.eg.db)
+importFrom(GenABEL, r2fast, snp.data, load.gwaa.data)
+# import(genetics)
+# manhattanplot
+import(grid)
+importFrom(gtools, odd, even)
+# regionalplot
+import(lattice)
+importFrom(gdata, trim)
+importFrom(coin, wilcox_test)
+# gwas2network
+import(igraph)
+import(Rgraphviz)
+# GOSimRedist
+importFrom(RBGL, sp.between)
+importFrom(RBGL, johnson.all.pairs.sp)
+importFrom(RBGL, separates)
+useDynLib(postgwas,OAWrapper)

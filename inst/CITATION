@@ -1,0 +1,12 @@
+citHeader("To cite package 'postgwas' in publications use:")
+
+citEntry(entry="Article",
+         title = "Postgwas: Advanced GWAS Interpretation in R.",
+         author = personList(as.person("Milan Hiersche"), as.person("Frank Ruehle"),  as.person("Monika Stoll")), 
+         year = "2013",
+         volume = "8",
+         journal = "PloS one",
+         number = "8",
+         pages = "e71775",
+         textVersion = "Hiersche, M., Ruehle, F., & Stoll, M. (2013). Postgwas: Advanced GWAS Interpretation in R. PloS one, 8(8), e71775. doi:10.1371/journal.pone.0071775"
+)

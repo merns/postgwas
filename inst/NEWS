@@ -1,0 +1,37 @@
+Version 1.11-1 Changelog
+
+Major: 
+getInteractions.GO: Dependency on the GOSim package has been removed. In turn, parts of the GOSim source code have been integrated into postgwas's source and at the same time been parallelized.  
+
+Minor: 
+vignettes source directory changed together with some minor code adaptations to comply with the new R 3.0.2 version
+regionalplot: y axis label (r^2) changed   
+
+
+Version 1.1 Changelog:
+
+Major:
+A vignette (postgwasVignette) has been added.
+GenABEL, GEMMA and FAsT-LMM output can be read by default. 
+buffer data concept changed (see help(postgwasBuffer)).  
+gwas2network: The legend of graphs can now be plotted to a separate box (new default)
+gwas2network: Major change in community p-value calculations and GO enrichment (see documentation)
+gwas2network: topGO enrichment tree can now be plotted (depending on file.verbosity argument)
+gwas2network: singleton, unconnected vertices now remain part of the network
+gwas2network: Improved runtime and memory consumption (e.g. uses data.tables) 
+Manhattanplot: Bug on sorting chromosomes with mixed character / numerical values fixed
+Manhattanplot: Bug for identifying highlighted regions with multiple thresholds fixed
+Manhattanplot: Gene annotation now draws SNP identifier when no genes can be annotated
+Manhattanplot: Can draw calibration lines now (argument highlight.lines)
+getGenotypes: Extended, now also handles GenABEL (gwaa) files
+getGenotypes: Extended, can now write retrieved genotypes to ped/map and gwaa/phe files
+getGenotypes: Default argument list and return value definition has been changed 
+Snp2gene: Argument list changed
+RemoveNeighborSnps: Bugfix in p-value pruning version for certain overlapping region constellations
+getInteractions: getInteractions.ppi has been removed due to unavailability of the REST access to biogrid. 
+                 A new getInteractions.path function has been added to generate networks of pathway data from REACTOME biomart. 
+
+Minor:
+Manhattanplot: Proportions and scaling of graphical elements optimized
+Snp2gene: Bugfix for reporting table
+biomartAccess: downloaded GO terms can now be buffered 
