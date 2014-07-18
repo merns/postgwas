@@ -1,8 +1,11 @@
 .Rproj.user
 .Rhistory
 .RData
-.Rbuildignore
 postgwas.Rproj
-src-i386
-src-x64
-vignettes
+inst/doc/*
+inst/doc
+postgwas*.tar.gz
+postgwas*.zip
+*.o
+*.so
+*.dll
