@@ -4,11 +4,36 @@ Date: 2013-09-01
 Title: GWAS Post-Processing Utilities
 Author: Milan Hiersche <mihi@uni-muenster.de>
 Maintainer: Milan Hiersche <mihi@uni-muenster.de>
-Depends: R (>= 2.11.0), data.table, biomaRt, GenABEL, igraph (>= 0.6-2)
-Suggests: topGO, parallel, VariantAnnotation, Rsamtools, org.Mm.eg.db, xtable, genetics, GO.db
-Imports: gtools, gdata, grid, coin, lattice, AnnotationDbi, org.Hs.eg.db, Rgraphviz, RBGL
-Description: Facilitates annotation of genes to SNPs using proximity or LD information, creates regional and manhattan plots and contains an interaction network analysis tool for GWAS result data. Special features cover subphenotype (intermediate phenotype) comparison and rare variant display.     
-# http://cran.r-project.org/doc/manuals/R-exts.html#The-DESCRIPTION-file
+Depends:
+    R (>= 2.11.0),
+    data.table,
+    biomaRt,
+    GenABEL,
+    igraph (>= 0.6-2)
+Suggests:
+    topGO,
+    parallel,
+    VariantAnnotation,
+    Rsamtools,
+    org.Mm.eg.db,
+    xtable,
+    genetics,
+    GO.db
+Imports:
+    gtools,
+    gdata,
+    grid,
+    coin,
+    lattice,
+    AnnotationDbi,
+    org.Hs.eg.db,
+    Rgraphviz,
+    RBGL
+Description: Facilitates annotation of genes to SNPs using proximity or LD
+    information, creates regional and manhattan plots and contains an
+    interaction network analysis tool for GWAS result data. Special features
+    cover subphenotype (intermediate phenotype) comparison and rare variant
+    display.
 License: GPL (>= 2)
 URL: http://www.r-project.org
 BugReports: milanhiersche@gmx.de

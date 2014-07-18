@@ -1,8 +1,7 @@
 .Rproj.user
 .Rhistory
 .RData
-.Rbuildignore
 postgwas.Rproj
-src-i386
-src-x64
-vignettes
+postgwas.Rcheck/*
+*.tar.gz
+*.o

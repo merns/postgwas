@@ -1,0 +1,5 @@
+^.*\.Rproj$
+^\.Rproj\.user$
+^cranChecks\.R$
+^.*\.tar\.gz$
+^postgwas_1\.11-1\.tar\.gz$
