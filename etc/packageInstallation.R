@@ -29,15 +29,19 @@ devtools::install(".")
 
 
 ## procedure for README.md ============================================
+#
+# markdown: https://bitbucket.org/tutorials/markdowndemo
+
+
+# install devtools
 install.packages(c("devtools", "rstudioapi"))
 
-
-
+# install missing packages
 biocPkgs <- c("biomaRt", "AnnotationDbi", "org.Hs.eg.db", "Rgraphviz", "RBGL")
 source("http://bioconductor.org/biocLite.R")
 biocLite(biocPkgs)
 
-
+# install postgwas
 devtools::install_bitbucket("postgwas", username="merns", password="")
 
 
