@@ -1,9 +1,14 @@
+# RStudio data
 .Rproj.user
 .Rhistory
 .RData
 postgwas.Rproj
-inst/doc/*
-inst/doc
+#
+# vignettes
+# inst/doc/*
+# inst/doc
+#
+# binary files
 postgwas*.tar.gz
 postgwas*.zip
 *.o

@@ -36,3 +36,4 @@ Description: Facilitates annotation of genes to SNPs using proximity or LD
     display.
 License: GPL (>= 2)
 NeedsCompilation: yes
+BuildVignettes: FALSE
