@@ -43,6 +43,9 @@ devtools::install_bitbucket("postgwas", username="merns", password="")
 version <- read.dcf("./DESCRIPTION")[, "Version"]
 ```
 
+```ruby 
+def index puts "hello world" end 
+```
 
 ~~~~
 #
