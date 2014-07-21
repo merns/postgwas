@@ -1,8 +1,6 @@
 
 # postgwas #
 
-## Description ##
-
 Facilitates annotation of genes to SNPs using proximity or LD
 information, creates regional and manhattan plots and contains an
 interaction network analysis tool for GWAS result data. Special features
@@ -16,7 +14,7 @@ display.
 
 ## Installation ##
 
-### Option I: Install from CRAN (1 minute) ###
+### Option 1: Install from CRAN (1 minute) ###
 
     install.packages("postgwas")
     library(postgwas)
@@ -24,7 +22,7 @@ display.
 See also the [CRAN package repository](http://cran.r-project.org/web/packages/postgwas/index.html).
 
 
-### Option II: Install from Bitbucket (5 minutes) ###
+### Option 2: Install from Bitbucket (5 minutes) ###
 
 1. Install (if you haven't already) a working development environment:
     * **Linux**: Install a compiler for your distribution. For instance for Ubuntu this would be `sudo apt-get install r-base-dev`. Further instructions can be found at [CRAN](http://cran.r-project.org/bin/linux).
@@ -53,8 +51,6 @@ See also the [CRAN package repository](http://cran.r-project.org/web/packages/po
 ## Contribution ##
 
 You are welcome to contribute!
-
-### Who do I talk to? ###
 
 Just contact one of the Repo owners [Marko Ernsting](https://bitbucket.org/merns) or [Frank Rühle](https://www.researchgate.net/profile/Frank_Ruehle)
 
