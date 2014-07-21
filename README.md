@@ -29,3 +29,23 @@ This README would normally document whatever steps are necessary to get your app
 * Repo owner or admin
 * Other community or team contact
 
+```
+#!S
+#
+devtools::install_bitbucket("postgwas", username="merns", password="")
+version <- read.dcf("./DESCRIPTION")[, "Version"]
+```
+
+```
+#!R
+#
+devtools::install_bitbucket("postgwas", username="merns", password="")
+version <- read.dcf("./DESCRIPTION")[, "Version"]
+```
+
+
+~~~~
+#
+devtools::install_bitbucket("postgwas", username="merns", password="")
+version <- read.dcf("./DESCRIPTION")[, "Version"]
+~~~~
