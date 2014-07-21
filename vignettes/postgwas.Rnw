@@ -6,7 +6,7 @@
 \author{Milan Hiersche, Frank R\"uhle}
 
 %\VignetteIndexEntry{postgwas Vignette}
-%\VignetteDepends{xtable}
+%\VignetteDepends{xtable, VariantAnnotation}
 \usepackage{graphicx, Rd, array, float}
 
 \begin{document}

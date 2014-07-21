@@ -11,7 +11,7 @@ This README would normally document whatever steps are necessary to get your app
 ### How do I get set up? ###
 
 * Summary of set up
-  [CRAN package repository](http://cran.r-project.org/web/packages/postgwas/index.html)
+* [CRAN package repository](http://cran.r-project.org/web/packages/postgwas/index.html)
 
 ```R
 devtools::install_bitbucket("postgwas", username="merns", password="")
