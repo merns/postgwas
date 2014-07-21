@@ -7,6 +7,7 @@ install.packages("./devtools.zip", repos = NULL)
 unlink("./devtools.zip")
 
 
+
 ## package dependencies ##############
 
 # depends
@@ -29,7 +30,9 @@ biocLite(missing.suggests)
 
 
 
+
 ## CRAN checks ##############
+
 devtools::build(vignettes=FALSE) # source
 #devtools::build_vignettes()   # takes long time
 
@@ -44,7 +47,7 @@ devtools::build_win()
 
 
 devtools::install_bitbucket("postgwas", username="merns", password="")
-
+vignette("postgwas")
 
 
 ## Manual CRAN checks ##############
@@ -67,10 +70,6 @@ cranInstall <- paste0("\"", Sys.getenv("R_HOME"), "/bin/R.exe\" CMD INSTALL --bu
 shell(cranInstall)
 
 setwd(paste0(getwd(), "/postgwas"))
-
-
-vignette("postgwas")
-
 
 
 
