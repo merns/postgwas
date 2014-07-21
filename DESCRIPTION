@@ -1,5 +1,5 @@
 Package: postgwas
-Version: 1.11-1
+Version: 1.11-2
 Date: 2014-07-18
 Title: GWAS Post-Processing Utilities
 Author: Milan Hiersche <mihi@uni-muenster.de>
@@ -35,7 +35,4 @@ Description: Facilitates annotation of genes to SNPs using proximity or LD
     cover subphenotype (intermediate phenotype) comparison and rare variant
     display.
 License: GPL (>= 2)
-URL: http://www.r-project.org
-BugReports: milanhiersche@gmx.de
-BuildVignettes: FALSE
-Packaged: 2013-10-28 06:52:25 UTC; milan
+NeedsCompilation: yes
