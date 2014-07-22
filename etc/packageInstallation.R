@@ -45,3 +45,5 @@ biocLite(biocPkgs)
 devtools::install_bitbucket("postgwas", username="merns", password="")
 
 
+## Alternative:
+install.packages("https://bitbucket.org/merns/postgwas/downloads/postgwas_1.11-2.zip", repos=NULL)

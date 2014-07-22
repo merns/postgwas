@@ -52,7 +52,7 @@ See also the [CRAN package repository](http://cran.r-project.org/web/packages/po
 
 You are welcome to contribute!
 
-Just contact one of the Repo owners [Marko Ernsting](https://bitbucket.org/merns) or [Frank Rühle](https://www.researchgate.net/profile/Frank_Ruehle)
+Just contact one of the Repo owners [Marko Ernsting](https://bitbucket.org/merns) or [Frank Rühle](https://www.researchgate.net/profile/Frank_Ruehle).
 
 * * *
 

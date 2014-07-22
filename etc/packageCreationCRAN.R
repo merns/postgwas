@@ -19,7 +19,6 @@ version <- read.dcf("./DESCRIPTION")[, "Version"]
 # build .tar.gz (with vignettes etc.) and check it afterwards
 # the resulting postgwas.tar.gz can be sent to CRAN
 setwd(paste0(getwd(), "/..")) # do not pollute our source directory
-message(paste0("Building package in ", getwd()))
 shell(paste0(binR, " CMD build postgwas"))  #takes very long time!
 shell(paste0(binR, " CMD build postgwas --no-build-vignettes"))
 
