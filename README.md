@@ -1,4 +1,3 @@
-
 # postgwas #
 
 Facilitates annotation of genes to SNPs using proximity or LD
@@ -52,7 +51,7 @@ See also the [CRAN package repository](http://cran.r-project.org/web/packages/po
 
 You are welcome to contribute!
 
-Just contact one of the Repo owners [Marko Ernsting](https://bitbucket.org/merns) or [Frank Rühle](https://www.researchgate.net/profile/Frank_Ruehle).
+Just contact one of the Repo owners [Marko Ernsting](https://bitbucket.org/merns), [Milan Hiersche](mailto:mhiersche@gmx.de) or [Frank Rühle](https://www.researchgate.net/profile/Frank_Ruehle).
 
 * * *
 
