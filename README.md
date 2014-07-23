@@ -6,7 +6,7 @@ interaction network analysis tool for GWAS result data. Special features
 cover subphenotype (intermediate phenotype) comparison and rare variant
 display.
 
-* See the [Vignette](src/inst/doc/postgwas.pdf) for further information and a lot of examples. 
+* See the package [Vignette](src/inst/doc/postgwas.pdf) for further information and a lot of examples. 
 * There is also a [publication](http://www.plosone.org/article/info%3Adoi%2F10.1371%2Fjournal.pone.0071775) covering `postgwas`.
 
 * * *
@@ -15,53 +15,60 @@ display.
 
 ### Option 1: Install from CRAN (1 minute) ###
 
+    setRepositories(ind = 1:6)
     install.packages("postgwas")
-    library(postgwas)
 
 See also the [CRAN package repository](http://cran.r-project.org/web/packages/postgwas/index.html).
 
 
-### Option 2: Install from Bitbucket (5 minutes) ###
+### Option 2: Install binary manually (1 minute and Windows only)
+
+    setRepositories(ind = 1:6)
+    install.packages("downloads/postgwas_1.11-2.zip", repos=NULL)
+
+This will install the Windows binary package built by us.
+
+### Option 3: Install from Bitbucket (5 minutes) ###
 
 1. Install (if you haven't already) a working development environment:
-    * **Linux**: Install a compiler for your distribution. For instance for Ubuntu this would be `sudo apt-get install r-base-dev`. Further instructions can be found at [CRAN](http://cran.r-project.org/bin/linux).
+    * **Linux**: Install a compiler for your distribution. For instance, for Ubuntu this would be `sudo apt-get install r-base-dev`. Further instructions can be found at [CRAN](http://cran.r-project.org/bin/linux).
     * **Windows**: You will need to have the [Rtools](http://cran.r-project.org/bin/windows/Rtools/) installed.
-    * **Mac**: You can find the latest Xcode.app containing a C compiler in the Mac App Store.
+    * **Mac**: You can find the latest [Xcode](https://itunes.apple.com/de/app/xcode/id497799835) containing a C compiler in the Mac App Store.
 
-2. Install `devtools` via CRAN:
+2. Install (if you haven't already) the `devtools` package via CRAN:
 
         install.packages(c("devtools", "rstudioapi"))
+  
+3. Install `postgwas` from Bitbucket via `devtools`:
+
+        setRepositories(ind = 1:6)
+        devtools::install_bitbucket("postgwas", username="merns")
         
-    (Note: You might also want to [update devtools](https://github.com/hadley/devtools#updating-to-the-latest-version-of-devtools) to the newest version available.)
+
+* * *
+
+## First steps ##
+Start by loading the `postgwas` package and read the excellent documentation.
+
+    library(postgwas)
+    vignette(postgwas)
     
-3. Install dependencies of `postgwas` that are not on CRAN from Bioconductor:
-
-        biocPkgs <- c("biomaRt", "AnnotationDbi", "org.Hs.eg.db", "Rgraphviz", "RBGL")
-        source("http://bioconductor.org/biocLite.R")
-        biocLite(biocPkgs)
-
-4. Install `postgwas` from Bitbucket via `devtools`:
-
-        devtools::install_bitbucket("postgwas")
-
-
 * * *
 
 ## Contribution ##
 
 You are welcome to contribute!
 
-Just contact one of the Repo owners [Marko Ernsting](https://bitbucket.org/merns), [Milan Hiersche](mailto:mhiersche@gmx.de) or [Frank Rühle](https://www.researchgate.net/profile/Frank_Ruehle).
+Just contact one of the Repo owners [Marko Ernsting](https://bitbucket.org/merns), [Milan Hiersche](mailto:mihi@uni-muenster.de) or [Frank Rühle](https://www.researchgate.net/profile/Frank_Ruehle).
 
 * * *
 
 ## Citation ##
 
-If you use the package for actual research, please cite the following [PlosOne publication](http://www.plosone.org/article/info%3Adoi%2F10.1371%2Fjournal.pone.0071775):
+If you use the package for research, please cite the following [PlosOne publication](http://www.plosone.org/article/info%3Adoi%2F10.1371%2Fjournal.pone.0071775):
 
 > Hiersche, M., Ruehle, F., & Stoll, M. (2013). Postgwas: Advanced GWAS 
 > Interpretation in R. PloS one, 8(8), e71775. doi:10.1371/journal.pone.0071775
-
 
 Use the following BibTex entry or download citation information from [here](http://www.plosone.org/article/citationList.action?articleURI=info%3Adoi%2F10.1371%2Fjournal.pone.0071775).
 ```Latex
