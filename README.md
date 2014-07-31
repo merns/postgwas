@@ -6,7 +6,7 @@ interaction network analysis tool for GWAS result data. Special features
 cover subphenotype (intermediate phenotype) comparison and rare variant
 display.
 
-* See the package [Vignette](src/inst/doc/postgwas.pdf) for further information and a lot of examples. 
+* See the package [Vignette](inst/doc/postgwas.pdf) for further information and a lot of examples. 
 * There is also a [publication](http://www.plosone.org/article/info%3Adoi%2F10.1371%2Fjournal.pone.0071775) covering `postgwas`.
 
 * * *
@@ -24,25 +24,25 @@ See also the [CRAN package repository](http://cran.r-project.org/web/packages/po
 ### Option 2: Install binary manually (1 minute and Windows only)
 
     setRepositories(ind = 1:6)
-    install.packages("downloads/postgwas_1.11-2.zip", repos=NULL)
+    install.packages("https://github.com/merns/postgwas/releases/download/1.11-2/postgwas_1.11-2.zip", repos=NULL)
 
 This will install the Windows binary package built by us.
 
-### Option 3: Install from Bitbucket (5 minutes) ###
+### Option 3: Install from GitHub (5 minutes) ###
 
 1. Install (if you haven't already) a working development environment:
+    * **Windows**: Install [Rtools](http://cran.r-project.org/bin/windows/Rtools).
+    * **Mac**: Install [Xcode](https://itunes.apple.com/de/app/xcode/id497799835).
     * **Linux**: Install a compiler for your distribution. For instance, for Ubuntu this would be `sudo apt-get install r-base-dev`. Further instructions can be found at [CRAN](http://cran.r-project.org/bin/linux).
-    * **Windows**: You will need to have the [Rtools](http://cran.r-project.org/bin/windows/Rtools/) installed.
-    * **Mac**: You can find the latest [Xcode](https://itunes.apple.com/de/app/xcode/id497799835) containing a C compiler in the Mac App Store.
 
 2. Install (if you haven't already) the `devtools` package via CRAN:
 
         install.packages(c("devtools", "rstudioapi"))
   
-3. Install `postgwas` from Bitbucket via `devtools`:
+3. Install `postgwas` from GitHub via `devtools`:
 
         setRepositories(ind = 1:6)
-        devtools::install_bitbucket("postgwas", username="merns")
+        devtools::install_github("postgwas", username="merns")
         
 
 * * *
@@ -59,7 +59,7 @@ Start by loading the `postgwas` package and read the excellent documentation.
 
 You are welcome to contribute!
 
-Just contact one of the Repo owners [Marko Ernsting](https://bitbucket.org/merns), [Milan Hiersche](mailto:mihi@uni-muenster.de) or [Frank Rühle](https://www.researchgate.net/profile/Frank_Ruehle).
+Just contact one of the Repo owners [Marko Ernsting](https://github.com/merns), [Milan Hiersche](mailto:mihi@uni-muenster.de) or [Frank Rühle](https://www.researchgate.net/profile/Frank_Ruehle).
 
 * * *
 
